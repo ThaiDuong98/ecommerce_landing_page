@@ -1,0 +1,1 @@
+this is a landing page using html5, css3 and javascript
