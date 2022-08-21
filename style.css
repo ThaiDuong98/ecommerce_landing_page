@@ -503,7 +503,7 @@ footer {
   }
 
   .section-p1 {
-    padding: 20px;
+    padding: 20px !important;
   }
 
   #feature {
