@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+</head>
+
+<body>
+    <section id="header">
+        <a href="#"><img src="img/logo.png" class="logo" alt="logo"></a>
+        <div>
+            <ul id="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html" class="active">Shop</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <li id="lg-bag"><a href="#"><i class="far fa-shopping-bag"></i></a></li>
+                <a href="#" id="close"><i class="far fa-times"></i></a>
+            </ul>
+        </div>
+        <div id="mobile">
+            <a href="cart.html"><i class="far fa-shopping-bag"></i></a>
+            <i id="bar" class="fas fa-outdent"></i>
+        </div>
+    </section>
+
+    <section id="prodetails" class="section-p1">
+        <div class="single-pro-imge">
+            <img src="img/products/f1.jpg" alt="" width="100%" id="MainImg">
+            <div class="small-img-group">
+                <div class="small-img-col">
+                    <img src="img/products/f1.jpg" width="100%" alt="" class="small-img">
+                </div>
+                <div class="small-img-col">
+                    <img src="img/products/f2.jpg" width="100%" alt="" class="small-img">
+                </div>
+                <div class="small-img-col">
+                    <img src="img/products/f3.jpg" width="100%" alt="" class="small-img">
+                </div>
+                <div class="small-img-col">
+                    <img src="img/products/f4.jpg" width="100%" alt="" class="small-img">
+                </div>
+            </div>
+        </div>
+
+        <div class="single-pro-detail">
+            <div class="detail-left">
+                <h6>Home / T-Shirt</h6>
+                <h4>Men's Fashion T Shirt</h4>
+                <h2>$139.00</h2>
+                <select name="" id="">
+                    <option value="">Select size</option>
+                    <option value="">S</option>
+                    <option value="">M</option>
+                    <option value="">L</option>
+                    <option value="">XL</option>
+                </select>
+                <input type="number" value="1">
+                <button class="normal">Add to Cart</button>
+            </div>
+            <div class="detail-right">
+                <h4>Product detail</h4>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                    and
+                    scrambled it to make a type specimen book. It has survived not only five centuries, but also the
+                    leap
+                    into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with
+                    the
+                    release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
+                    publishing
+                    software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="section-p1">
+            <p>Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for
+                previewing
+                layouts and visual mockups.</p>
+            <p>&copy 2022</p>
+        </div>
+    </footer>
+
+    <script>
+        var MainImg = document.getElementById("MainImg")
+        var small = document.getElementsByClassName("small-img")
+
+        small[0].onclick = function () {
+            MainImg.src = small[0].src
+        }
+
+        small[1].onclick = function () {
+            MainImg.src = small[1].src
+        }
+
+        small[2].onclick = function () {
+            MainImg.src = small[2].src
+        }
+
+        small[3].onclick = function () {
+            MainImg.src = small[3].src
+        }
+
+    </script>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
